@@ -1,0 +1,102 @@
+[debug] [2024-09-10T02:26:32.550Z] ----------------------------------------------------------------------
+[debug] [2024-09-10T02:26:32.553Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-10T02:26:32.554Z] CLI Version:   13.16.0
+[debug] [2024-09-10T02:26:32.554Z] Platform:      win32
+[debug] [2024-09-10T02:26:32.554Z] Node Version:  v20.9.0
+[debug] [2024-09-10T02:26:32.554Z] Time:          Mon Sep 09 2024 23:26:32 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-09-10T02:26:32.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-10T02:26:32.558Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-10T02:26:32.616Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-10T02:26:32.616Z] > authorizing via signed-in user (juanmatoniolo2@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Juanma\Desktop\todolist
+
+[debug] [2024-09-10T02:26:33.038Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-10T02:26:33.039Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-10T02:27:01.866Z] > refreshing access token with scopes: []
+[debug] [2024-09-10T02:27:01.868Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-10T02:27:01.868Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-10T02:27:02.037Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-10T02:27:02.037Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-10T02:27:02.045Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-09-10T02:27:02.993Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-09-10T02:27:02.994Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project to-do-e0ce5 (To-Do) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-09-10T02:27:06.157Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-09-10T02:27:06.157Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/to-do-e0ce5
+[debug] [2024-09-10T02:27:07.293Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com 200
+[debug] [2024-09-10T02:27:07.294Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-09-10T02:27:07.298Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-09-10T02:27:07.298Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/to-do-e0ce5
+[debug] [2024-09-10T02:27:08.659Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-09-10T02:27:08.659Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-09-10T02:27:18.674Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-09-10T02:27:18.674Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/to-do-e0ce5
+[debug] [2024-09-10T02:27:19.775Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com 200
+[debug] [2024-09-10T02:27:19.775Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/to-do-e0ce5/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-09-10T02:27:19.779Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 [none]
+[debug] [2024-09-10T02:27:20.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 200
+[debug] [2024-09-10T02:27:20.154Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 {"projectId":"to-do-e0ce5","projectNumber":"788214877908","displayName":"To-Do","name":"projects/to-do-e0ce5","resources":{"hostingSite":"to-do-e0ce5"},"state":"ACTIVE","etag":"1_ca04dd2c-fdf8-49a7-ad71-b8052e91a3cb"}
+[debug] [2024-09-10T02:44:06.051Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances databaseId=to-do-e0ce5-default-rtdb&validateOnly=true
+[debug] [2024-09-10T02:44:06.051Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-09-10T02:44:07.293Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances 200
+[debug] [2024-09-10T02:44:07.293Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances {"name":"projects/788214877908/locations/us-central1/instances/to-do-e0ce5-default-rtdb","project":"projects/788214877908","databaseUrl":"https://to-do-e0ce5-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-09-10T02:44:07.294Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances databaseId=to-do-e0ce5-default-rtdb
+[debug] [2024-09-10T02:44:07.294Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-09-10T02:44:07.805Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances 200
+[debug] [2024-09-10T02:44:07.805Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/to-do-e0ce5/locations/us-central1/instances {"name":"projects/788214877908/locations/us-central1/instances/to-do-e0ce5-default-rtdb","project":"projects/788214877908","databaseUrl":"https://to-do-e0ce5-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-09-10T02:44:16.399Z] >>> [apiv2][query] GET https://to-do-e0ce5-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-09-10T02:44:17.134Z] <<< [apiv2][status] GET https://to-do-e0ce5-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-09-10T02:44:17.135Z] <<< [apiv2][body] GET https://to-do-e0ce5-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for to-do-e0ce5-default-rtdb have been written to y. 
+[info] Future modifications to y will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[debug] [2024-09-10T02:44:17.140Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 [none]
+[debug] [2024-09-10T02:44:17.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 200
+[debug] [2024-09-10T02:44:17.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/to-do-e0ce5 {"projectId":"to-do-e0ce5","projectNumber":"788214877908","displayName":"To-Do","name":"projects/to-do-e0ce5","resources":{"hostingSite":"to-do-e0ce5","realtimeDatabaseInstance":"to-do-e0ce5-default-rtdb"},"state":"ACTIVE","etag":"1_ca04dd2c-fdf8-49a7-ad71-b8052e91a3cb"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-09-10T02:44:22.247Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-09-10T02:44:22.362Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-09-10T02:44:22.362Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.13.1","browserURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.tgz"},"live":{"version":"10.13","browserURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.13.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.13.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.13.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.13.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.13.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.13.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.memory.js"}}
+[debug] [2024-09-10T02:44:22.505Z] Error: ENOTDIR: not a directory, scandir 'C:\Users\Juanma\Desktop\todolist\y'
+    at Object.readdirSync (node:fs:1513:3)
+    at Object.createFileSync (C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:159:12)
+    at C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:183:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:177:9)
+    at async init (C:\Users\Juanma\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:40:9)
+[error] 
+[error] Error: An unexpected error has occurred.
